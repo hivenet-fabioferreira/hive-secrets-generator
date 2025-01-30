@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: kube-config-supply-cluster
+  namespace: hivecompute-platform
+spec:
+  encryptedData:
+    value: AgDgLlZJVWeWwo3YEtguJkYVhxwkswHdfRzpss/AgX9jkHB/bPdlaQtlMeh92cY//JIBuB0hRslevT+YjSv6I7LwWhd4ZK3i/WPb0Tvz+AOkogTW0O2k//BAOLveaQZMkIOfFYqmV4jdBLEJlBcxvVeUQYNZJ1lgf2dSioezPPtiosvlCCb3NnEsRdL/CXd8uJV4g0XUwknHj38V7WrqaSP+iDtVTmH04JeDmE+8sWQJxHm9+uoYcmJa3bT7NXVgZ9I1yfSOiSj1iS6UaQkNnH1mulThaq7gjIbF+j9JD7+PuH687tUXVXp2FFUeC9Eb54b+7Nh/GeSg4dIx09nd0sda71vyfV0PwGikGWuqigFO0mJB7/tTQkPyT4k1X3mAZvzR0uTuJcEqKyE/sJhqhllvSf5/Oc0lei+MsKcEu2xg6jmkpb6FnLLoycF4cn3tje2U9K+5EYyHNEgap+ZrTOW3gWVML0W9tJeOftoCwgAIfTJVXytFBVhOMbSHx6PyZC24kSBq6kpJYN+oohIHJrOl8QbcbAfVCSsWEw0MyCmjclXiHEWYeGr1qcdjts8lDK/lBDVfdwMQJPtzBuCu+3z29HVmZAHKpX8w6vioiUOHLRgw7LoATqum01+fIMCubYIzIhdmyn4sSp20XNAT5Ely1sRy1j9+ZkUuEsIz2uKs3Cc6Mxw6n6SrxzCzIQeduZDcDDCQKh06T5MUa+8CzWW6
+  template:
+    metadata:
+      creationTimestamp: null
+      name: kube-config-supply-cluster
+      namespace: hivecompute-platform

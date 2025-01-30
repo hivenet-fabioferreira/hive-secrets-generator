@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: reverse-proxy-token
+  namespace: hivecompute-supply
+spec:
+  encryptedData:
+    auth-token: AgAlJmuKWEUeIi27ZS7M36dTiJ22cEp3hbQw4ooepp0MMRAQSUMdNOPq19V/MVunHiXmdzU2N6dqZ5sSp7Lgg4hSe9jO+k2zCzoDqICMoL50+fwdoo0CqrdMRTwP1+GBtPm93SZ1eQP6KOlayhCvxeSXwraIOr5JAlKn97qP+igbGpvHW09BrkOSG2StYntW0+7V1aYFpFPZnGtCwSembGRUoSnDi5kCIRTnek21X7+2psluNNjIwW8oQeGPzBf9JAaxSu8FR+LbC71j0lob1WNlcmnDDSLf9+zYKs3qdp8xG69Pkmnd3hr5R2abz+GtpjoPLMDfD/Y0YXmxpfm+vE6nLlFa17t5pAQHvyisraExe1T+XtdSFDHCosW3U2xWJ53/W+fsji3adPUeMSXVDRyiYIWZpjlcN2I9qNPsl/fVL3F+LrkNgr21QuJrT/fqiOHquIHZrgcr+2aM+LkqrwSpLjzVSivP+ml3cK7HSasm0CTHA5sv42jtLZLVN+V6fJdzLF7TGAJpOchtAO0ohXjnlazq+gh0HY/r7vdE9T8fla7IJ9NN7ENTvqk5kdHDzvxfMUV3e9oaav16+cgwTMIl4N4Ksx5ud/Ptr/bgVjU/Wst2ubygO7baRi/2x410HeHTJH0M6JsiYjXTNcYHdFkiHjtJHNiBTUxEUuze6+9zXEjjQbynVazHTMDiIs/8valCJwyycCID3jwlfU6IHhJpo8MRy/TqQVQUeCq9A9L8YUcTiiPX5/qqseanFzbynXHVoKBlVn0L7Wn9oDz7Nd5CAQuw7+koDndkizuMxIeT3vX74uIIYfHZdGBY8SjVcSWyC+sNUMYeybrGaMsRgZ2tQX5UzELjxL6CVU/8Z4Xqww==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: reverse-proxy-token
+      namespace: hivecompute-supply
+    type: Opaque

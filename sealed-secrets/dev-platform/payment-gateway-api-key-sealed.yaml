@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: payment-gateway
+  namespace: services
+spec:
+  encryptedData:
+    api-key: AgANvn5kChC66oQhUQvSoPZPrNUSt+Oam2GHCrvVF7sI07B1CjkiETIBwwFPJOhBkwTQGXkVLRlwWWUWqdq7Nw5Kd6xdV4aRAA7ri+1C3bw7zS5LF34Y21bMoJr+A/Jumg7x7APKO2P1oI2YmCNmdPNRrC2vFzwauz0XHCECS761DQeGLz2NXqjN7+BzABTqBzq5sU5ha4/XYFuj3vtjJds7CRrdopv1/T78DNDbsvR8EYDLJq/DdqK6A+q96ev5TxcwZoKlSG4ZoYWXz4hOZtYRBdcEmH28Vfsztaiu8Lc60I60eVXZJ/G4cNXEo3Zzmz6YrE4uqE346BCkRH1HbkrVHlavPQvgt6IBROyYEnimSH2yx7v8WGsx5rahPIltsJZNfW4IZW+5+hvuDyp2B8rbJCsMLBcw2FtIb3AXdFYI9rVjarfvWZVCOZmSjd93hil1H+vOp86ypLKHnD5P9XMvoM5vKUxt5RI+EmULLaKwycoZzzq6cfYh9A9QR0a3JxnOBLq9Z4VrMG6cKZOND4+HmY+AQI6L7/d8/46Xzrk7+0chAQj7PyJlvSVKQuAjNwdB/qoFyCTj7rPSUNxRs6aDg/fy1R4dnLEII8lVhcyTIk8n7IRbGkFv0o+X5jdmi7yTatYMtIDQKYf1xHopZCUpYoff+me05fQVE7GmnUn4THfygfDh6mx87veWxA3jnxgadsBexsW34Ol8ky74hDwjqJM2BgUqIf89u0C2F3LfFw==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: payment-gateway
+      namespace: services

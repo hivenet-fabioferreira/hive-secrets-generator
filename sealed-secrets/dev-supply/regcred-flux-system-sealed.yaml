@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: flux-system
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCIpOgUDtskEjbyoMihmYK4/RHv8CZNwddpAJwIePQTwbRvD12VP9hu58RzFuHzNUmk2jfnnf1khczIy6uYcrAbeQx5v/vGYodYKRhKscPtiAcQutfbecEWjD7NwHOoQ7Tef8ru5Xj7n/Dwy/wFuqHhoSLM6Y19kDGRpHZvT0IywLdMRPxmL0ctqEk5HAGEwWrKuM6ojzNId/nFKlLdMpxnyzvyd5KqJIjNBykmi/ro+5cisPTC3q7+pNP54oQIuq2YaT5MBrnkarETsN4EV7ecmK1QXPOev9zoxIzSnTMptbL0t2cYTL9bcSjKrp+50MUcXtDFCnbmIarl90gnXFBlpArWmubbA5iVcvJcJ5lC4yyh7z1g+lbUa+TImJPmV4s3bkFBv05zquwHdvaPHmngKDztXxl8yuYIrjqQWHAs0Mj+RHwHpFXmX1HPJjifJX1nuwdn1VBqAJRvVIGdZZDf1prW982HmaVdVcu4UKNcbO348cLa33W8dgttgfCQSMHCi++edwQxoVesWk29iAXCKizJyvcLxKr3qy2KeH9MBDycFOIJH2tNiQ5DCInYjrdso4BALdlvYepls0sBo2CMFGpHRXegLOwTtbGrdMOctLFx+MSK3qKywaPH2YxsytGNRIpecGt4gZjHw53Laaa8Sti10qUAxSrhXY73uetA0Aw3kpFeeev87vBZhFbfL8seQAklcrpis/rtTrRfghzprS/x8U+Hfa/X6sSDzFK0lzI0U171HXkd7ILzqz5eealEPXp4DYbWU3YlRaR94V1DwWoDo284sh1yzpUGIcRd/DJVv/IZTU45KxtFlG6bfNkb7dxqcr5wTWu24aSMF02tUNc+on++vKtVxb9vcAaViDxUuPnFACxT9MmbN1+mFjZCTuxhp96aOvHwYJ9VDqOp2DsUMh6OemDeRP82UwDBZEGCWM0YMTjoJgOpa1iPo7h06Pp5on7Na5Dtm4GGB/QWt5iMo0iCzPNw4US6L6HCkHFcu9t+SsU=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: flux-system
+    type: kubernetes.io/dockerconfigjson

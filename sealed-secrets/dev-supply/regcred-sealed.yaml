@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: hivecompute-supply
+spec:
+  encryptedData:
+    .dockerconfigjson: AgAaku1ukQmYE0PbKy8WtqXZCi+Sp78KKX4LZeZkEAWk1nxX4rXu8Fmi7ZDOmwF7qfBAMOzCYcyXNyD7XZEFSadjz4H3ej763ceQs3Bu94uQTHQgmCDwmJnkpXvm7S5V2Pz4XIuYLRV0bsauiVxjDHTvcNg2YVoQcGE6oC8pBX1sr0ueZuJbWUN0dVbewZiPf9ZwOUW+dR2ommBMqr4sLlizLRpiGtfIfjdOrzI644s8+Gdes/vuwcK0soaqVq0TPT2WnDe1un4n5s/tHzP1jCZM/wtSVsN2RhySCEZJUv35a6OifKRmbRve9E79OccbzNPjmBqPsIN57ag/pVMe4Hy9huRaOYRU+LfBHumDH0O4y5huDsQR9cEzfF5NCUc804LQrYWhyU1lcF1pC1rxGRwLc4HoVXjBzc/9yDr0bGK+cbCuh59rD5/H3XE18KsU49L8GC39SoNLINPZU91zX0FO3yqSuVH7wUY7j0S2DML1/TaBDgU0JEoIaMfyGCK7j/kaLzZ5JYDgIhK5CKmr3+wQHLgoOBQithoY6gOiJ8FB3hCYattRZ+GDWV5E5wWATrP9mVowkpOsA4NK7Z/OMWz/kjD0BzsluK/iEV5lXumv1FsRw5rtK3h43kuog5caUIy79CYkEqxhGFLO167wnpkOLoEiaBoou+4XASG94IVkPYNfe9/n/yq+qx5KnQB24q0rE6BOc7rKVUhemSYt88yiqARnsOWOHlz0scNN+4f69a2taJApgsi4hV3QpijoIpCYUnb4aXgQ3pmG/R1an5+wF7nOFGCzz6NuzHiDBJmtq4+E5CDdyuET9ZbQY+uYX3EnX6EQ553ubRrp47hMWl2YWNRFAQO7GoqfiU+5bPTbN28v0FYyJ8YkJeoydNUQlj2zn0AbfGgCsGCyTngCCLXy7euidTZ9+Et8hgsji2p0ATOVZhBAIlqzjJejtM+wJPoRaiAePsbNpWYKV6mlyIXuLl14V1iEFO0xA30NoC7TeFO734Fx86Q=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: hivecompute-supply
+    type: kubernetes.io/dockerconfigjson

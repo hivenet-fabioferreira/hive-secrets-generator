@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: google-analytics
+  namespace: services
+spec:
+  encryptedData:
+    api-secret: AgCKT19dxFNwsVn9L3p7Am10Sjditkgk7eRTErTdOvHF/eiCqujDdoO39DRbUT9LA7/8hAGGytpN7/wEhpoY1VCJchiAltzJip5eTt918FHGvwCzdhchUwBsrhUHCwsxlgJP6xijy+vt1gVfpkRfpZAb7pxAk1D9WX+ka9wPw6Nf1CFEQ4uRni9yvWJk/dSnr5EfmFPGXJA1sAUtD3DJwSwP4zYwx/2PnWwE3QpHs6aEnsffB/ndHouWAGk1i579vdlYrGN/3vgatQ9e7RpSG4tOi2hI4Xu0I0HcMAbvTrC5GtzUuaAAVYO/B6oW+xS/rtngR7Hac4jEnw/mdkhSwbb2UI+Zdqz1MrNet2gq9MsRRoY6z/g203hbwwEv9xsBdMzEuQanDwLYYvFas10rqOfWlZjlnNhSiOFQoqmzrj1MOUwwl5b66Sy2vnR0vQvfAdsB1Uq4jDPOxaHXFmOc17PCAVwrqM0m/im86wHogasLCD7pLPP1Y81hCynJNLvLw3qJUMuR0t/htnElBnWNrJiLboCe0bOZb5KZ/5JXbxnonsJ1k/cZqkdLsKWaMSh6Pa+AcoSMjjeHH+JEPUiaG4f8ZHSR9B+2X9Y72AprWNmHFhNO06IPWb93Sgp/8Et1p4A3o9M7gb1QibSGCcd0AlRiRASlSCyMM4JVsyV2UdQ8KC84pnTSwtMkJG9L3NBPvnFcGRSOHzDwETZv/XeqJE2a+3ywq0ir
+  template:
+    metadata:
+      creationTimestamp: null
+      name: google-analytics
+      namespace: services
+    type: Opaque
