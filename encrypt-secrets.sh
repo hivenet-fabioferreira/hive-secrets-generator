@@ -68,6 +68,12 @@ elif [ "$CLUSTER_TYPE" == "platform" ]; then
   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/slack-url.yaml > sealed-secrets/$CLUSTER/slack-url-sealed.yaml
 
-   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/webhook-token.yaml > sealed-secrets/$CLUSTER/webhook-token-sealed.yaml
+
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  < ./secrets/$CLUSTER/mixpanel.yaml > sealed-secrets/$CLUSTER/mixpanel-sealed.yaml
+
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  < ./secrets/$CLUSTER/intercom.yaml > sealed-secrets/$CLUSTER/intercom-sealed.yaml
 fi

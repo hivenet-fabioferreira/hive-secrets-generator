@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: intercom
+  namespace: services
+spec:
+  encryptedData:
+    intercom-token: AgBJF9NvaxrYw1Oxnfro4XKBfLKmbhsu6+l3A5S0hwjYiTkefxog5W6Kvd4QyGoAaoSdQTfWObElJuqlGT/Jdj9U4s9fQsrHfKAjs7bjHu21DlQ9jaEQX5cfpUsIdnHJ8X5Zkl/kuWtYuJQ2ySGpTVTPqsx9dJZY9yVUi96zxW2nEjga0VlPGw3szbpc1PYvR4l8dBGlw1NSQi5VevagGM+yn4Anvl880Ff6+7B8d+w0n+nCx8gLSQwn6Z3V7Ju/pIy2dvV9JZaBgiad/uaN11ALF820RjdJ1KkkkQ8l7GN8McUjLl7V7OHh37lS5zq90eFfzstzZ6yyFnGk30YiSc5pDf+2Nbww4+azL1Vaowpyl8BttIrCSDYdwS6aZisak+u94jN0V2dwJVcJrXKtxIPhx21RId+ZY8HEbjRo0w7Z2hi2VG+NMqrl0jcboca+bT4LCpPlJsvlQp0QtL/NYVGIr9Bg70P309fSP2F1AygDnglUBy/6Cd2FfNWm25MIXCT3gOZCo905VUbGXGTA4GG8qt6KZGDRo2oVv/xwnVR5rWkTWOS3+LeiHb7SGGadw5B1rImHESIbG+T7unz21sXraqYR3dPKxtilbHedWQZb4i2EtyJxvjPg3BlNx5aByhoAK2opGyERPLWOFHpiW/JJSWt1iXDmrbIvI27x7i5tRxaA7DYO2yJD6Ca118aR78FmDZk6U1l1F4xbvaLMxnb2mOjQ+WoQfiKAMNYJ6Gevg2Nv4nirXolRdtlflMxEgufV4Rh48aTHJJ+K8ubK3RqF9zSNt+tTRuA=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: intercom
+      namespace: services
