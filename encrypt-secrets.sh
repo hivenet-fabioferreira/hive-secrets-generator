@@ -72,6 +72,9 @@ elif [ "$CLUSTER_TYPE" == "platform" ]; then
   < ./secrets/$CLUSTER/webhook-token.yaml > sealed-secrets/$CLUSTER/webhook-token-sealed.yaml
 
   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  < ./secrets/$CLUSTER/loki-supply.yaml > sealed-secrets/$CLUSTER/loki-supply-sealed.yaml
+
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/mixpanel.yaml > sealed-secrets/$CLUSTER/mixpanel-sealed.yaml
 
   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
