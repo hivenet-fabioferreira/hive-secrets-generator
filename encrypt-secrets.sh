@@ -6,9 +6,6 @@ CLUSTER_TYPE=${2:-supply}
 
 if [ "$CLUSTER_TYPE" == "supply" ]; then
   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
-  < ./secrets/$CLUSTER/github-auth-secret.yaml > sealed-secrets/$CLUSTER/github-auth-secret-sealed.yaml
-
-  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/regcred.yaml > sealed-secrets/$CLUSTER/regcred-sealed.yaml
 
   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
@@ -32,8 +29,6 @@ if [ "$CLUSTER_TYPE" == "supply" ]; then
    kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/webhook-token.yaml > sealed-secrets/$CLUSTER/webhook-token-sealed.yaml
 elif [ "$CLUSTER_TYPE" == "platform" ]; then
-  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
-  < ./secrets/$CLUSTER/github-auth-secret.yaml > sealed-secrets/$CLUSTER/github-auth-secret-sealed.yaml
 
    kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/google-analytics.yaml > sealed-secrets/$CLUSTER/google-analytics-sealed.yaml
