@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: mixpanel
+  namespace: services
+spec:
+  encryptedData:
+    mixpanel-token: AgCLulNUt0+OkRf6mT6WPuYV6cxjn0842cpWWmFf5STYGs+4J/gJ9srF+wTvaawJA1dw3BzNM/oPPuCcRxvHGbOJMZoXoQrQ5ygU+lTmAo9Jj34uRncVvq+5/9MPudEh/aB3IQvmMjNrOLU0kakw/oSQOnbOEDx4e1aa/FSzBBJPN0YNmrrRygzYQTLxpoyADndq0a5xjad0Y5yo9sPqUwUjH/4XbS6oZNlnKQPwn+o6KSnehaoguEa30vQMCvSFKXffeDCj03aBZy6Zq6oUpOwZsf4UVCRIM89Dgn+V4LqmkbdKMxW92Vg3YJiJuvR7LrpXXK1lDXPOp4xfseHP+xvj4CrhfZjCU/M8lYFwGn2ltKqKmhg7Q7viSKM18j8Deg46GJTPgrDkPPQtfBlK7fSTM7c6nmTkMNpVa4g6Ni4gbMJBUnhhGoD9UxQ/UzmviEYH8zRdolCHEdGLIR5q7EiWNmpZd5cEAR11omNxo2BGeB9xrXW3vhug7Y6eekJ2uYPhErzMedsFd7uiQ2qyHZ3AgbS3a6n3i+Tn6/yOJzqEQHf+4AdOeLStkE5bYD/uZ2AxKfGVzhABUg8GMyoPaU1sH1z0bJoKhXgb8IcbP7zhTdsVUuoqFEJ0s/w6/fNrakFacURRyCm5jT7QD0SRNWVtCnVD34FgVqysEqB9b84hC+LEx/ofntUb7MeY2PUHsVYqG55QOiLbDiOvIURbZw/PaGcfYP9fGiINaA2ygqhXdA==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: mixpanel
+      namespace: services
+    type: Opaque
