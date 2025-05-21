@@ -28,6 +28,12 @@ if [ "$CLUSTER_TYPE" == "supply" ]; then
 
    kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/webhook-token.yaml > sealed-secrets/$CLUSTER/webhook-token-sealed.yaml
+
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  < ./secrets/$CLUSTER/regcred-infra.yaml > sealed-secrets/$CLUSTER/regcred-infra-sealed.yaml
+
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  < ./secrets/$CLUSTER/instances-data-private-key.yaml > sealed-secrets/$CLUSTER/instances-data-private-key-sealed.yaml
 elif [ "$CLUSTER_TYPE" == "platform" ]; then
 
    kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
@@ -74,4 +80,7 @@ elif [ "$CLUSTER_TYPE" == "platform" ]; then
 
   kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
   < ./secrets/$CLUSTER/intercom.yaml > sealed-secrets/$CLUSTER/intercom-sealed.yaml
+
+  kubeseal --format=yaml --cert=./keys/$CLUSTER/pub-sealed-secrets.pem \
+  < ./secrets/$CLUSTER/instances-data-public-key.yaml > sealed-secrets/$CLUSTER/instances-data-public-key-sealed.yaml
 fi
